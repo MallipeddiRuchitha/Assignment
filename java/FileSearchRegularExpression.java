@@ -11,9 +11,9 @@ import java.util.regex.*;
 
 public class FileSearchRegularExpression {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter regular expression to search files");
-        String regularExpression = sc.next();
+        String regularExpression = scanner.next();
         FileSearchRegularExpression fileSearchRegularExpression = new FileSearchRegularExpression();
 
         File homeDirectory = new File("/home/ruchitha");
