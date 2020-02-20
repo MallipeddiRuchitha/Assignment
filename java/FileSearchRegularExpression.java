@@ -28,13 +28,14 @@ public class FileSearchRegularExpression {
 
         /*
         This method  searches through the homeDirectory file
-        and looks for files that match a regular expression.First it checks if the file ia a directory or not ,
+        and looks for files that match a regular expression.*/it checks if the file ia a directory or not ,
         if it is then the  method is recursively called with that file as parameter
-        */
+        
 
 
         for (File file : homeDirectory.listFiles()) {
-
+/*Each file in home direcrtory is checked whether it is a directory or not ,
+if it is then the method(searchFiles) is called with this file as the  parameter.*/
 
             if (file.isDirectory()) {
                 searchFiles(regularExpression, file);
