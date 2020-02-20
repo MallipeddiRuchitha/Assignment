@@ -28,8 +28,7 @@ public class FileSearchRegularExpression {
 
         /*
         This method  searches through the homeDirectory file
-        and looks for files that match a regular expression.*/it checks if the file ia a directory or not ,
-        if it is then the  method is recursively called with that file as parameter
+        and looks for files that match a regular expression.*/
         
 
 
