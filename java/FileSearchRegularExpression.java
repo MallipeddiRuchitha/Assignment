@@ -24,12 +24,18 @@ public class FileSearchRegularExpression {
 
     }
 
-    public void searchFiles(String regularExpression, File homeDirectory) {
-
-        /*
+    /**
+     *
+     * @param regularExpression represents regular expression which should be matched with the file names.
+     * @param homeDirectory  it represents users home directory
+     */
+     /*
         This method  searches through the homeDirectory file
         and looks for files that match a regular expression.*/
-        
+    public void searchFiles(String regularExpression, File homeDirectory) {
+
+
+
 
 
         for (File file : homeDirectory.listFiles()) {
