@@ -17,6 +17,11 @@ public class AllAlphabets {
 
     }
 
+    /**
+     *
+     * @param data represents the string for which we have to check whether it contains all alphabets or not
+     * @return true if input contains all alphabets else false
+     */
     /*
     Space Complexity:Amount of space occupied
        Each character occupies 1 byte memory and integer 2 or 4 bytes depending on compiler(Here it is considered as 4).
