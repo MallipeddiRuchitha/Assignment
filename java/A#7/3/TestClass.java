@@ -14,7 +14,38 @@ interface Interface3{
 interface Interface extends Interface1,Interface2,Interface3{
     void IMethod();
 }
-public class TestClass implements Interface  {
+class ConcreteClass{
+    public ConcreteClass(){
+        System.out.println("Concrete class constructor");
+    }
+    public void mathod(){
+        System.out.println("concrete class method");
+
+    }
+
+}
+public class TestClass extends ConcreteClass  implements Interface {
+   public void I1Method1(){
+        System.out.println("I1method1");
+    }
+   public void I1Method2(){
+        System.out.println("I1method2");
+    }
+    public void I2Method1(){
+        System.out.println("I2method1");
+    }
+   public void I2Method2(){
+        System.out.println("I2method2");
+    }
+   public void I3Method1(){
+        System.out.println("I3method1");
+    }
+   public void I3Method2(){
+        System.out.println("I3method2");
+    }
+   public void IMethod(){
+        System.out.println("Imethod");
+    }
     public void method1(Interface1 interface1){
         System.out.println("method1");
 
@@ -33,14 +64,18 @@ public class TestClass implements Interface  {
     }
 
 
-public static void main(String[] args){
-    TestClass testClassObj=new TestClass();
-    testClassObj.method1(testClassObj);
-    testClassObj.method2(testClassObj);
-    testClassObj.method3(testClassObj);
-    testClassObj.method4(testClassObj);
+    public static void main(String[] args){
+        TestClass testClassObj=new TestClass();
+        //the following method prints "method1"
+        testClassObj.method1(testClassObj);
+        //the following method prints "method2"
+        testClassObj.method2(testClassObj);
+        //the following method prints "method3"
+        testClassObj.method3(testClassObj);
+        //the following method prints "method4"
+        testClassObj.method4(testClassObj);
 
 
 
-}
+    }
 }
