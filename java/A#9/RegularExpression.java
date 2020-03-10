@@ -18,14 +18,14 @@ public class RegularExpression {
     }
     public boolean checkSentence(String sentence){
         //the regular expression represents a sequence of characters that begins with a capital letter and ends with a period.
-       String regularExpression="[A-Z].*.";
+    String regularExpression="^[A-Z].*$[.]";
        // pattern variable represents a Pattern object which is a compiled representation of a regular expression.
         Pattern pattern = Pattern.compile(regularExpression);
         //  Matcher object m interprets the pattern and performs match operations against  input string sentence.
         Matcher m = pattern.matcher(sentence);
-        while (m.find()){
-            return true;
-        }
+      
+        if(m.matches())
+            return  true;
         return false;
 
     }
